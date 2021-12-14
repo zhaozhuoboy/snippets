@@ -1,0 +1,86 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"import": {
+	 "prefix": "z-import",
+	 "body": [
+		"import ${1:plugin} from '$2'"
+	 ],
+	 "description": "导入组件库"
+	},
+	"Print to console": {
+	 "prefix": "z-log",
+	 "body": [
+		"console.log(`${1:console}-->${$2}`)"
+	 ],
+	 "description": "打印"
+	},
+	"components life": {
+	 "prefix": "z-components",
+	 "body": [
+		"components: {\n  $1\n},"
+	 ],
+	 "description": "注册组件"
+	},
+	"props": {
+	 "prefix": "z-props",
+	 "body": [
+		"props: {\n  $1\n},"
+	 ],
+	 "description": "外部数据"
+	},
+	"data": {
+	 "prefix": "z-data",
+	 "body": [
+		"data () {",
+			"\treturn {",
+				"\t\t$1",
+			"\t}",
+		"},"
+	 ],
+	 "description": "内部数据"
+	},
+	"computed": {
+	 "prefix": "z-computed",
+	 "body": [
+		"computed: {\n  $1\n},"
+	 ],
+	 "description": "computed 计算属性"
+	},
+	"watch": {
+	 "prefix": "z-watch",
+	 "body": [
+		"watch: {\n  $1\n},"
+	 ],
+	 "description": "watch"
+	},
+	"created life": {
+	 "prefix": "z-created",
+	 "body": [
+		"created () {\n  $1\n},"
+	 ],
+	 "description": "created 生命周期"
+	},
+	"mounted life": {
+	 "prefix": "z-mounted",
+	 "body": [
+		"mounted () {\n  $1\n},"
+	 ],
+	 "description": "mounted 生命周期"
+	},
+	"methods": {
+	 "prefix": "z-methods",
+	 "body": [
+		"methods: {\n  $1\n},"
+	 ],
+	 "description": "methods 方法"
+	},
+	"page-import": {
+	 "prefix": "page-import",
+	 "body": ["const ${1:PageName} = () => import(/* webpackChunkName: \"${1:PageName}\" */ '../views/${2:path}')"],
+	 "description": "按需加载一个页面"
+	}
+ }

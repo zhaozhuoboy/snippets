@@ -1,0 +1,64 @@
+{
+	// Place your snippets for scss here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"字号": {
+		"prefix": "z-font",
+		"body": [
+			"@include font(${1:16}, ${2:400});"
+		],
+		"description": "设置字号"
+	},
+	"行高字号": {
+		"prefix": "z-line-font",
+		"body": [
+			"@include lineFont(${1:16});"
+		]
+	},
+	"一行省略": {
+		"prefix": "z-row",
+		"body": [
+			"@extend %row;"
+		]
+	},
+	"多行省略": {
+		"prefix": "z-row-n",
+		"body": [
+			"@include row(${1:2});"
+		]
+	},
+	"深度覆盖样式": {
+		"prefix": "z-deep",
+		"body": [
+			"@include deep () {",
+			"\t$1",
+			"}"
+		]
+	},
+	"居中": {
+		"prefix": "z-center",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		]
+	},
+	"flex": {
+		"prefix": "z-flex",
+		"body": [
+			"display: flex;",
+			"justify-content: ${1:center};",
+			"align-items: ${2:center};"
+		]
+	}
+}
